@@ -9,7 +9,7 @@ public class Restaurant {
     /**
      * Nombre del administrador
      */
-    private String userName;
+    //private String userName;
     /**
      * Nombre del restaurante
      */
@@ -32,9 +32,9 @@ public class Restaurant {
      * @param resAddress Dirección del restaurante
      * @param resDescFood Descripción de la temática
      */
-    public Restaurant(String resID, String userName, String resName, String resAddress, String resDescFood) {
+    public Restaurant(String resID, /**String userName,*/ String resName, String resAddress, String resDescFood) {
         this.resID = resID;
-        this.userName = userName;
+    //    this.userName = userName;
         this.resName = resName;
         this.resAddress = resAddress;
         this.resDescFood = resDescFood;
@@ -56,9 +56,9 @@ public class Restaurant {
      * Obtiene el nombre del administrador
      * @return String userNamer
      */
-    public String getUserName() {
-        return userName;
-    }
+    //public String getUserName() {
+    //    return userName;
+    //}
     /**
      * Obtiene el nombre del restaurante
      * @return String resName
@@ -93,9 +93,9 @@ public class Restaurant {
      * Modifica el nombre del administrador del restaurante
      * @param userName nuevo nombre del administrador
      */
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
+    //public void setUserName(String userName) {
+    //    this.userName = userName;
+    //}
     /**
      * Modifica el nombre del restaurante
      * @param resName 
