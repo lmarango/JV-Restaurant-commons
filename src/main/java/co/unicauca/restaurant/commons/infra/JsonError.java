@@ -1,4 +1,4 @@
-package co.unicauca.restaurante.commons.infra;
+package co.unicauca.restaurant.commons.infra;
 
 /**
  * Representa un error
