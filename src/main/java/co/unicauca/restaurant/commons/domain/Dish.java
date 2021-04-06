@@ -14,7 +14,7 @@ public class Dish {
     /**
      * Identificador del plato especial
      */
-    private String dishID;
+    private int dishID;
     /**
      * Nombre del plato especial
      */
@@ -26,7 +26,7 @@ public class Dish {
     /**
      * Precio del plato especial
      */
-    private float dishPrice;
+    private double dishPrice;
     /**
      * array de bytes que representan la imagen del plato
      */
@@ -46,7 +46,7 @@ public class Dish {
      * @param dishPrice Precio del plato
      * @param dishImage Imagen del plato
      */
-    public Dish(String dishID, String dishName, String dishDescription, float dishPrice, byte[] dishImage) {
+    public Dish(int dishID, String dishName, String dishDescription, float dishPrice, byte[] dishImage) {
         this.dishID = dishID;
         this.dishName = dishName;
         this.dishDescription = dishDescription;
@@ -59,7 +59,7 @@ public class Dish {
      * Obtiene el identificador de un plato
      * @return String dishID
      */
-    public String getDishID() {
+    public int getDishID() {
         return dishID;
     }
     /**
@@ -80,7 +80,7 @@ public class Dish {
      * Obtiene el precio de un plato
      * @return String dishPrice
      */
-    public float getDishPrice() {
+    public double getDishPrice() {
         return dishPrice;
     }
     /**
@@ -96,7 +96,7 @@ public class Dish {
      * Modifica el identificador de un plato
      * @param dishID nuevo identificador
      */
-    public void setDishID(String dishID) {
+    public void setDishID(int dishID) {
         this.dishID = dishID;
     }
     /**
@@ -117,7 +117,7 @@ public class Dish {
      * Modifica el precio de un plato
      * @param dishPrice nuevo identificador
      */
-    public void setDishPrice(float dishPrice) {
+    public void setDishPrice(double dishPrice) {
         this.dishPrice = dishPrice;
     }
     /**

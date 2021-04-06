@@ -1,4 +1,4 @@
-package co.unicauca.restaurante.commons.infra;
+package co.unicauca.restaurant.commons.infra;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +13,7 @@ public class Protocol {
     private String resource;
     private String action;
     private List<Parameter> parameters;
+    private List<ParameterImagen> parametersIcon;
 
     public Protocol() {
         parameters = new ArrayList<>();
@@ -46,5 +47,15 @@ public class Protocol {
         parameters.add(new Parameter(name, value));
     }
 
+    public List<ParameterImagen> getParametersIcon() {
+        return parametersIcon;
+    }
+
+    public void setParametersIcon(List<ParameterImagen> parametersIcon) {
+        this.parametersIcon = parametersIcon;
+    }
+    public void addParameterIcon(String name, byte[] value) {
+        parametersIcon.add(new ParameterImagen(name, value));
+    }
 }
 
